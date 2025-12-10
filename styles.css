@@ -258,7 +258,7 @@ nav .right a:last-child:hover i {
 .projects-section .sub-container {
     display: flex;
     flex-direction: column;
-    flex: 3;
+    flex-grow: 1;
     padding: 10px;
 }
 
@@ -294,8 +294,9 @@ nav .right a:last-child:hover i {
 }
 
 .projects-section .new-item {
+    display: flex;
+    flex-direction: column;
     width: 33%;
-    height: auto;
 }
 
 .projects-section .new-item a {
