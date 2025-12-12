@@ -3,6 +3,7 @@
     --link-color: #e48d0c;
     --highlight-color: #9e50c2;
     --background-color: #1a1a1a;
+    --darken-bg: #121212;
 }
 
 * {
@@ -250,7 +251,7 @@ nav .right a:last-child:hover i {
     gap: 5%;
 }
 
-.projects-section .container img {
+.projects-section .container .project img {
     width: 40%;
     height: auto;
 }
@@ -311,6 +312,17 @@ nav .right a:last-child:hover i {
     width: 100%;
     height: 150px;
     object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+    background-color: var(--darken-bg);
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    color: var(--text-color);
 }
 
 
@@ -378,11 +390,35 @@ nav .right a:last-child:hover i {
     }
 
     /* PROJECT SECTION */
-    .projects-section {
-
+    .projects-section .containers .container .project {
+        flex-direction: column;
     }
 
+    .projects-section .containers .container .alt{
+        flex-direction: column-reverse;
+    }
+
+    .projects-section .containers .container .project img {
+        width: auto;
+    }
+
+    .projects-section .containers .container .news-section .news {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .projects-section .new-item {
+        width: auto;
+        height: auto;
+    }
+
+    .projects-section .new-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 }
+
 
 @media (max-width: 560px) {
     /* NAVBAR MOBILE */
