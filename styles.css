@@ -3,7 +3,7 @@
     --link-color: #e48d0c;
     --highlight-color: #9e50c2;
     --background-color: #1a1a1a;
-    --darken-bg: #121212;
+    --darken-bg: rgb(18, 18, 18);
 }
 
 * {
@@ -63,7 +63,7 @@ a {
     margin-left: 15%;
     width: 70%;
     border: 1px solid var(--link-color);
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 /* NAVBAR */
@@ -239,10 +239,11 @@ nav .right a:last-child:hover i {
     display: flex;
     flex-direction: column;
     flex: 2;
-    margin: 5% auto;
+    margin-left: 2%;
+    margin-right: 2%;
     width: 95%;
     margin-top: 10px;
-    gap: 20px;
+    gap: 10px;
 }
 
 .projects-section .containers .container .project {
@@ -317,13 +318,13 @@ nav .right a:last-child:hover i {
 /* CONTACT SECTION */
 
 .contact-section .call-to-act {
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
     display: flex;
     flex-direction: row;
     text-align: center;
-    gap: 2%;
+    gap: 10%;
 }
 
 .contact-section .cta-img {
@@ -339,13 +340,13 @@ nav .right a:last-child:hover i {
 
 
 .contact-section .cta-title {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    font-size: 15px;
+    margin-top: 10%;
 }
 
 .contact-section .forms {
-    max-width:420px; 
-    margin: 50px auto;
+    max-width: 420px; 
+    margin: 10% auto;
 }
 
 .feedback-input {
@@ -402,12 +403,13 @@ textarea {
 footer {
     height: 100px;
     background-image: url('images/bannerCrop.png');
+    background-color: rgba(18, 18, 18, 0.6);
+    background-blend-mode: multiply;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     font-size: 11px;
     color: var(--text-color);
 }
-
 
 @media (max-width: 1140px) {
     .section {
@@ -450,8 +452,8 @@ footer {
     }
 
     .main-section .text .links {
-    margin-top: 14px;
-    text-align: center;
+        margin-top: 14px;
+        text-align: center;
     }
 
     .main-section .headshot img {
