@@ -20,17 +20,20 @@
 
         <title>R. Orfeu</title>
     </head>
-    <body>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        
+    <body>        
         <!-- NAVBAR -->
          <nav class="section">
+            <input type="checkbox" name="" id="hamburgerMenu"/>
             <div class="left">
                 <a href="/index.html">
                     <i class="fa-solid fa-terminal"></i>
                     <span>R. Orfeu</span>
                 </a>
-
+                <div class="menu">
+                    <div class="logo">
+                        <label for="hamburgerMenu"><i class="fa-solid fa-bars"></i></label>
+                    </div>
+                </div>
             </div>
             <div class="right">
                 <a href="http://github.com/oorpheas" target="_blank" rel="noopener noreferrer">
@@ -64,7 +67,7 @@
             <!-- Dev -->
              <section class="main-section section">
                 <div class="text">
-                    <h2>Hello! I'm <a class="name typing">Rafael Orfeu</a></h2>
+                    <h2><a class="name typing">Rafael Orfeu</a></h2>
                         <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" class="spinning-text">
                             <p>
                                 Unity Developer<br />
@@ -73,8 +76,7 @@
                                 Automation Enthusiast<br />
                             </p>
                         </div>
-                    <div data-aos="fade-up data-aos-duration="1000"
-    data-aos-easing="ease-in-out" class="links">
+                    <div data-aos="fade-up data-aos-duration="1000" data-aos-easing="ease-in-out" class="links">
                         <a href="#skills">
                             <i class="fa-solid fa-code"></i>
                             <span>Skills</span>
@@ -102,8 +104,7 @@
                     <h2>Skills</h2>
                 </div>
                 <div class="containers">
-                    <div data-aos="fade-up" data-aos-duration="3000"
-    data-aos-easing="ease-in-out" class="container">
+                    <div data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-out" class="container">
                         <h3>Degree</h3>
                         <div class="topics">
                             <p>
@@ -112,8 +113,7 @@
                             </p>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="3000"
-    data-aos-easing="ease-in-out" data-aos-delay="250" class="container">
+                    <div data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-out" data-aos-delay="250" class="container">
                         <h3>Technical Skills</h3>
                         <div class="topics">
                             <p>
@@ -138,8 +138,7 @@
                             </p>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="3000"
-    data-aos-easing="ease-in-out" data-aos-delay="500" class="container">
+                    <div data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-out" data-aos-delay="500" class="container">
                         <h3>Development</h3>
                         <div class="topics">
                             <p>
@@ -282,6 +281,8 @@
                 </div>
              </section>
          </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="/js/contactme.js"></script>
     </body>
     <footer >
         <p> All rights reserved <a href="#" class="fa-regular fa-eye icon"></a> 2025 Rafael Orfeu</p>

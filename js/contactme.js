@@ -1,7 +1,4 @@
-// 1. Encontramos o formulário pelo ID
-document.addEventListener("DOMContentLoaded", function () {
-
-    const _form = document.getElementById("contactForm");
+const _form = document.getElementById("contactForm");
 
     _form.addEventListener("submit", function (event) {
 
@@ -27,4 +24,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href =
         `mailto:orfeu.dev@gmail.com?subject=${_subject}&body=${_body}`;
     });
-});
