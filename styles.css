@@ -690,3 +690,7 @@ footer {
 #hamburgerMenu {
     display: none;
 }
+
+nav .menu {
+    display: none;
+}
