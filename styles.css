@@ -192,7 +192,7 @@ nav .right a:last-child:hover i {
 
 /* HAB SECTION */
 .skills-section .title h2 {
-    text-align: right;
+    text-align: left;
 }
 
 .skills-section .containers {
@@ -293,6 +293,10 @@ nav .right a:last-child:hover i {
 .projects-section .news-section {
     display: flex;
     flex-direction: column;
+}
+
+.projects-section .news-section .title {
+    padding: 0px 10px;
 }
 
 .projects-section .news-section .news {
@@ -419,6 +423,11 @@ footer {
 }
 
 @media (max-width: 1140px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
     .nav-dots {
         opacity: 0;
     }
@@ -433,11 +442,13 @@ footer {
     }
 
     /* NAVBAR MOBILE */
+
     nav {
         padding: 0px 20px;
         height: 100px;
         flex-direction: column;
         transition: 0.5s ease-in-out;
+        background-color: var(--darken-bg);
     }
 
     nav .left {
@@ -475,7 +486,7 @@ footer {
 
     nav .right a:last-child {
         color: var(--text-color);
-        background-color: var(--background-color);
+        background-color: var(--darken-bg);
         padding: 0px;
         margin: 15px 0px;
     }
@@ -490,6 +501,7 @@ footer {
 
     body:has(#hamburgerMenu:checked) nav {
         height: 300px;
+        border-bottom: 2px solid var(--link-color);
     }
 
     /* MAIN SECTION MOBILE */
